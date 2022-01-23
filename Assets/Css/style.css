@@ -1,0 +1,149 @@
+.button {
+  border-radius: 0px;
+  background-color: transparent;
+  border: #ffffff solid 2px;
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Bouton style 2 */
+.button2 {
+  border-radius: 0px;
+  background-color: #000000;
+  border: #000000 solid 0px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2:hover {
+  background-color: #e21b25;
+  color: #FFFFFF;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Bouton style 3 */
+.button3 {
+  border-radius: 5px;
+  border: #000000 solid 0px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#grad {
+    background: -webkit-linear-gradient(#3c546b, #2d5c88, #3a80b2); /* Pour Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3c546b, #2d5c88, #3a80b2); /* Pour Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3c546b, #2d5c88, #3a80b2); /* Pour Firefox 3.6 to 15 */
+    background: linear-gradient(#3c546b, #2d5c88, #3a80b2); /* Standard syntax (must be last) */
+}
+
+#grad:hover {
+    background: -webkit-linear-gradient(#3a80b2, #2d5c88, #3c546b); /* Pour Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3a80b2, #2d5c88, #3c546b); /* Pour Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3a80b2, #2d5c88, #3c546b); /* Pour Firefox 3.6 to 15 */
+    background: linear-gradient(#3a80b2, #2d5c88, #3c546b); /* Standard syntax (must be last) */
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3:hover {
+  background-color: #e21b25;
+  color: #FFFFFF;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 25px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
