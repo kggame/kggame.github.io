@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NotPad.exe</title>
+	<script src="/Assets/JavaScript/Chrono.js"></script>
+	<script src="/Assets/JavaScript/Outils.js"></script>
+	<script src="/Assets/JavaScript/ch.js"></script>
+</head>
+<body>
+	<STYLE type="text/css">
+		BODY {
+			background: buttonface;
+			margin: 0;
+			overflow: hidden;
+		}
+		.input {
+		  width: 100%; 
+			text-align: left;
+			border: 0;
+			font: menu;
+		}
+		.inputover {
+			width: 100%;
+			text-align: left;
+			background-color: highlight;
+			border: 0;
+			font: menu;
+			color: white;
+			cursor: pointer;
+		}
+		.type1 { 
+		  position: absolute; 
+			visibility: hidden;
+			z-index: 2;
+			width: 150px;
+			background-color: buttonface; 
+			border: 2px outset; 
+		}
+		.Aire {
+		  position: absolute;
+			margin: 5px;
+			width: 500px;
+			height: 400px;
+			border: 2px inset;
+			overflow: auto;
+			padding : 0px 5px 0px 5px;
+			text-align: left;
+			font-family: sans-serif;
+			font-size: 14px;
+		} 
+		</STYLE>
+		</HEAD>
+		
+		<BODY>
+		
+		<FORM ACTION="mailto:mon.interlocuteur@fai.fr" NAME="form" STYLE="margin-top: 5px"> 
+		<INPUT TYPE="button" NAME="bt1" CLASS="input" VALUE="  Fichier" STYLE="margin-left: 5px; border: 2px ridge; width: 80px;" ONMOUSEOVER="this.className='inputover'; montre11();" ONMOUSEOUT="this.className='input';" ONCLICK="montre1();">
+		<INPUT TYPE="button" NAME="bt2" CLASS="input" VALUE="  Edition" STYLE="border: 2px ridge; width: 80px;" ONMOUSEOVER="this.className='inputover'; montre21();" ONMOUSEOUT="this.className='input';" ONCLICK="montre2();">
+		<INPUT TYPE="button" NAME="bt4" CLASS="input" VALUE="  Outils" STYLE="border: 2px ridge; width: 80px;" ONMOUSEOVER="this.className='inputover'; montre41();" ONMOUSEOUT="this.className='input';" ONCLICK="montre4();">
+		<INPUT TYPE="button" NAME="bt6" CLASS="input" VALUE="  Aide" STYLE="border: 2px ridge; width: 80px;" ONMOUSEOVER="this.className='inputover'; montre51();" ONMOUSEOUT="this.className='input';" ONCLICK="montre5();">
+		<TABLE>
+		 <TR>
+		  <TD><!-- Fichier -->   
+		   <DIV CLASS="type1" ID="fichier">
+		   <SPAN><SCRIPT LANGUAGE="JavaScript" type="text/javascript">fiche();</SCRIPT></SPAN>
+		   </DIV><!-- Fin fichier --> 
+		  </TD>
+		  <TD><!-- Edition -->  
+		   <DIV CLASS="type1" ID="edition" STYLE="margin-left: 83px">
+		   <SPAN><SCRIPT LANGUAGE="JavaScript" type="text/javascript">edit();</SCRIPT></SPAN>
+		   </DIV><!-- Fin edition -->
+		  </TD>
+		  <TD><!-- Outil -->   
+		   <DIV CLASS="type1" ID="outil" STYLE="margin-left: 166px">
+		   <SPAN><SCRIPT LANGUAGE="JavaScript" type="text/javascript">out();</SCRIPT></SPAN>
+		   </DIV><!-- Fin outil --> 
+		  </TD>
+		  <TD><!-- Aide -->  
+		   <DIV CLASS="type1" ID="aide" STYLE="margin-left: 249px">
+		   <SPAN><SCRIPT LANGUAGE="JavaScript" type="text/javascript">aid();</SCRIPT></SPAN>
+		   </DIV><!-- Fin aide-->
+		  </TD>
+		 </TR>
+		</TABLE>
+		<HR>
+		<TEXTAREA CLASS="Aire" NAME="Aire" ONCLICK="cache1(); cache2(); cache4(); cache5();" COLS="60" ROWS="15"></TEXTAREA> 
+		</FORM>
+</body>
+</html>

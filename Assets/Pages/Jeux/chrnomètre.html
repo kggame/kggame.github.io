@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="/Assets/Css/chrono.css">
+    <script src="/Assets/JavaScript/Chrono.js"></script>
+    <link rel="stylesheet" href="/Assets/Css/style1.css">
+</head>
+<body>
+    <header>
+        <header>
+            <div id="brand"><a href="#">KGGames</a></div>
+            <nav>
+              <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Assets/Pages/Games.html">Games</a></li>
+                <li><a href="https://kggames.forumactif.com/">Forum</a></li>
+              </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/Assets/Pages/Games.html">Games</a></li>
+                  <li><a href="https://kggames.forumactif.com/">Forum</a></li>
+                </ul>
+              </div>
+         </header>
+    </header>
+    <h1>Stopwatch</h1>
+
+    <div id="time"></div>
+
+
+	<form name="parametre" action="" method="">
+        <input type="button" name="lance"  value="Start" onclick="chrono();debut();">
+        <input type="button" name="pause"  value="Stop" onclick="arret();" disabled="disabled">
+        <input type="button" name="zero"  value="To erase" onclick="arret();raz();" disabled="disabled">
+        <input type="button" name="intermediaire"  value="Intermediate" onclick="inter();" disabled="disabled">
+        <input type="button" name="rappel"  value="Recall" onclick="rappeler();" disabled="disabled">
+    </form>
+
+
+	<div id="presenter">
+        <p>Intermediate time:</p>
+        <span id="interm"></span>
+    </div>
+</body>
+</html>
